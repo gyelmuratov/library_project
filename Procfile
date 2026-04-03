@@ -1,1 +1,1 @@
-web: gunicorn 'library_project.wsgi'
+web: gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
